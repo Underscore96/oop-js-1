@@ -69,15 +69,74 @@ console.log(schoolbook1.toString());
 console.log(schoolbook1.getUpperTitle());
 
 
-const libraryCollection = [book2, book3, schoolbook1, magazine1];     //questo array non contiene elementi di tipo diverso, in verità. 
+// const libraryCollection = [book2, book3, schoolbook1, magazine1];     //questo array non contiene elementi di tipo diverso, in verità. 
                                                                       //Perché hanno tutti un parente comune (Publication). Quindi è come se JS li leggesse tutti come delle publication. 
                                                                       //questa si chiama POLIMORFIA
 
 
-for (const pub of libraryCollection) {
-    console.log(pub.toString());
-}                                                                
+// for (const pub of libraryCollection) {
+//     console.log(pub.toString());
+// }                                                                
 
 //quando faccio il toString, ognuno fa il suo. Anche se prima erano tendenzialmente tutte publications
 
 //mettiamo di voler cambiare le date e non gestirle più come delle stringhe, bensì come dei numeri. Siccome Publication li determina tutti, posso cambiare solo lui e a cascata cambia tutto
+
+
+// const library1 = new Library([book2, book3, magazine1, schoolbook1]);
+
+// library1.deletePublication(3);
+
+// const book4 = new Book('se questo è un uomo', 'primo levi', '12/05/1992', 'adephi');
+
+// library1.addPublication(book4);
+
+// console.log(library1);
+
+const gui = new GUI();
+
+gui.start();
+
+
+
+///JSON----------------------------------------------------------------------------------------------------------------
+
+// const student1 = {
+//     name: 'bryan',
+//     yob: 1994,
+//     isMarried: false
+// }
+
+// console.log(student1);
+
+// const student1JSON = JSON.stringify(student1);
+
+// console.log(student1JSON);
+
+// const stringArray = ['qui', 'quo', 'qua'];
+
+// const stringArrayJSON = JSON.stringify(stringArray);
+
+// console.log(stringArrayJSON);
+
+
+// const student2 = {
+//     name: 'francesca',
+//     yob: 1989,
+//     isMarried: false
+// }
+
+// const studentArray = [student1, student2];
+
+// const studentArrayJSON = JSON.stringify(studentArray);
+
+// console.log(stringArrayJSON);
+
+// console.log(student2);
+
+
+// const jsonString ='[{ "name": "bryan", "yob": 1994, "isMarried": false }]';
+
+// const studentArray = JSON.parse(jsonString);
+
+// console.log(studentArray);
